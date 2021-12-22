@@ -14,15 +14,9 @@
             font-family: "Segoe UI", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
         }
 
-        h3 {
-            text-align: left;
-        }
-
-        h4 {
-            text-align: left;
-            color: gray;
-            padding-left: 10px;
-            padding-right: 10px;
+        a {
+            text-decoration: none;
+            color: #337ab7;
         }
 
         .container {
@@ -33,16 +27,31 @@
         .socials {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            justify-content: space-around;
             border-top: 4px solid #e7e7e7;
             border-bottom: 4px solid #e7e7e7;
             margin-bottom: 30px;
             margin-top: 30px;
         }
 
-        a {
-            text-decoration: none;
-            color: #337ab7;
+        .socials h4 {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .posts h4 {
+            text-align: left;
+            color: gray;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .posts h2 {
+            text-align: left;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 10px;
         }
     </style>
 
@@ -51,7 +60,6 @@
             <div class="container">
                 <br />
                 <h1>Ben Blute</h1>
-
                 <div class="socials">
                     <h4><a href="https://twitter.com/benblute">Twitter</a></h4>
                     <h4><a href="https://discordapp.com/users/493972606387748864">Discord</a></h4>
@@ -61,10 +69,11 @@
                     <h4><a href="https://www.facebook.com/benblute">Facebook</a></h4>
                     <h4><a href="https://www.reddit.com/user/benblute">Reddit</a></h4>
                 </div>
-
-                <h4></h4>
-                <h3><a href="/"></a></h3>
-                <br />
+                <div class="posts">
+                    <h4>2021 Dec 22</h4>
+                    <h2><a href="/posts/defi-explainer-threads.html">DeFi explainer threads</a></h3>
+                    <br />
+                </div>
             </div>
         </center>
     </body>
