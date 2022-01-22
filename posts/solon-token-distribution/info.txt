@@ -17,9 +17,9 @@ Below are the five categories of people who will receive a portion of the Solon 
 
 NFT holders (~5%)
 
-These tokens will be distributed to holders of Solon NFTs based on their randomly generated properties. This is the only percentage that can't be voted on because NFT holders agreed to it upon purchasing the NFTs. Instead, we've included a yes or no vote to indicate whether the NFT holders agree to the predetermined distribution of tokens within this category.
+These tokens will be distributed to holders of Solon NFTs based on their randomly generated properties. This is the only percentage that can't be voted on because NFT holders agreed to it upon purchasing the NFTs. Instead, we've included a yes or no vote to indicate whether the NFT holders agree to the predetermined distribution of tokens within this category. If the majority of token holders vote no, we will hold another vote to decide how these tokens will be distributed.
 
-Core Developers (8%)
+Core developers (8%)
 
 These tokens will be split equally between Max and Ben. They will be locked in a smart contract that releases tokens according to a vesting schedule that will be determined in a future vote. We will not be able to vote with tokens in the vesting contract.
 
