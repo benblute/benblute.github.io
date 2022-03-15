@@ -81,7 +81,7 @@
 
                 <h2>Address checksums</h2>
                 <p>A checksum is a way to determine whether or not a piece of data has been modified. Most distributed ledgers include a checksum in their public addresses to safeguard against typos. For example, if you attempt to transfer bitcoin to an address, but mistakenly capitalize a letter that should be lowercase, the checksum will fail and the Bitcoin network will not recognize the transfer as a valid transaction.</p>
-                <p>Unlike Bitcoin, Ethereum doesn’t implement an address checksum at the protocol level. This means that the Ethereum network will recognize any 20 digit hexadecimal number as a valid address. However, most wallets support an application level standard that uses the capitalization of letters in an address as a checksum. For example, 0x3a149f0c5dc5c0f1e29e573215c23710de9c4f87 and 0x3a149f0c5dc5c0F1E29e573215C23710dE9c4f87 both represent the same hexadecimal number, but most wallets will not recognize the first one as a valid address because it does not pass the checksum.</p>
+                <p>Unlike Bitcoin, Ethereum doesn’t implement an address checksum at the protocol level. This means that the Ethereum network will recognize any 20 digit hexadecimal number as a valid address. However, most wallets support an application level standard that uses the capitalization of letters in an address as a checksum. For example, 0x3a149f0c5dc5c0f1e29e573215c23710de9c4f87 and 0x3a149f0c5dc5c0F1E29e573215C23710dE9c4f87 both represent the same hexadecimal number, but most wallets will not recognize the first one as a valid address because the letters are not capitalized properly.</p>
                 <br />
 
                 <h2>Hierarchical deterministic wallets</h2>
@@ -102,11 +102,11 @@
                 <p>Seed: 0x1059da4e95de6bc08e86d554cb64ea8f4dd92a830a5de24ec4a1127059d7b36118c29fc9c34d914bd0bc1096604b8bfe33b6e30b3aae20d969c23a170f6fe6c2
                 <br />
                 Seed phrase: bright demand olive glance crater key head glory quantum leisure intact age</p>
-                <p>Both of these values can be used to access the exact same set of keypairs, but the seed phrase is much more user-friendly. It also adds some much needed redundancy to the seed. If you mess up a single letter in a seed or seed phrase, it becomes completely invalid. However, with a seed phrase, these mistakes usually result in a misspelled word, which makes them much easier to recognize and correct.</p>
+                <p>Both of these values can be used to access the exact same set of keypairs, but the seed phrase is much more user-friendly. It also adds some much needed redundancy to the seed. If you mess up a single letter in a seed or seed phrase, it becomes completely invalid. However, with a seed phrase, these mistakes usually result in a misspelled word, which makes them easy to recognize and correct.</p>
                 <br />
 
                 <h2>Custodial wallets</h2>
-                <p>Centralized exchanges, like Coinbase or Binance, usually provide custodial wallet services as well. A custodial wallet is essentially an IOU from another party that manages keypairs on your behalf. This isn’t necessarily a security risk (people have been trusting banks with their money for centuries), but it does defeat the entire point of distributed ledger technology. As the mantra goes, “Not your keys, not your coins.”</p>
+                <p>Centralized exchanges like Coinbase or Binance usually store users' assets on custodial wallets. A custodial wallet is essentially an IOU from another party that manages keypairs on your behalf. This isn’t necessarily a security risk (people have been trusting banks with their money for centuries), but it does defeat the entire point of distributed ledger technology. As the mantra goes, “Not your keys, not your coins.”</p>
                 <br />
 
                 <h2>Web3 security</h2>
@@ -114,7 +114,7 @@
                 <p>Most wallet software will encrypt your seed using a password, so the first step to staying secure is using a secure password. I’m not going to go into too much detail because I’m sure you’ve heard it all before. Use a mix of uppercase and lowercase letters, numbers, and symbols, avoid dictionary words, etc. If you want to be extra safe, you can use a hardware wallet, which stores your seed on a separate device that is not connected to the internet.</p>
                 <p>Most wallet software will also show you your seed phrase during the setup process. This is meant to be a backup in case something happens to the device your wallet is running on. Avoid storing this seed phrase on a computer. It’s best to write it down on paper and hide it somewhere only you can find it. And most importantly, never share your seed phrase with anyone, for any reason!</p>
                 <p>The final way a malicious actor can gain access to your digital assets is by getting you to sign a malicious message or transaction. This is the most difficult type of attack to defend against because it can be very hard to tell the difference between a legitimate signature and a malicious one. The best way to keep yourself safe, without having to understand the inner workings of every smart contract you interact with, is to only sign messages and transactions for reputable applications (e.g. Uniswap or Opensea). Also, beware of websites that imitate reputable applications, which often use similar domain names (e.g. unswap.org instead of uniswap.org). The safest way to open an application is by googling it and clicking on the first result that isn’t marked as an ad.</p>
-                <p>Thanks for reading to the end. Hopefully you learned a thing or two about wallets. Now go and enjoy the wonderful world of web3!</p>
+                <p>Thanks for reading to the end. I hope you learned a thing or two about wallets. Now go and enjoy the wonderful world of web3!</p>
                 <br />
                 <br />
                 <a href="/">See all posts</a>
