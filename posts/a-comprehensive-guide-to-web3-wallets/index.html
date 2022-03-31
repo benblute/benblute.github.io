@@ -81,7 +81,7 @@
 
                 <h2>Address checksums</h2>
                 <p>A checksum is a way to determine whether or not a piece of data has been modified. Most distributed ledgers include a checksum in their public addresses to safeguard against typos. For example, if you attempt to transfer bitcoin to an address, but mistakenly capitalize a letter that should be lowercase, the checksum will fail and the Bitcoin network will not recognize the transfer as a valid transaction.</p>
-                <p>Unlike Bitcoin, Ethereum doesn’t implement an address checksum at the protocol level. This means that the Ethereum network will recognize any 20 digit hexadecimal number as a valid address. However, most wallets support an application level standard that uses the capitalization of letters in an address as a checksum. For example, 0x3a149f0c5dc5c0f1e29e573215c23710de9c4f87 and 0x3a149f0c5dc5c0F1E29e573215C23710dE9c4f87 both represent the same hexadecimal number, but most wallets will not recognize the first one as a valid address because the letters are not capitalized properly.</p>
+                <p>Unlike Bitcoin, Ethereum clients don’t enforce an address checksum. This means that the Ethereum network will recognize any 20 digit hexadecimal number as a valid address. However, most wallets and dapps support an application level standard that uses the capitalization of letters in an address as a checksum. For example, 0x3a149f0c5dc5c0f1e29e573215c23710de9c4f87 and 0x3a149f0c5dc5c0F1E29e573215C23710dE9c4f87 both represent the same hexadecimal number, but most applications will not recognize the first one as a valid address because the letters are not capitalized properly.</p>
                 <br />
 
                 <h2>Hierarchical deterministic wallets</h2>
