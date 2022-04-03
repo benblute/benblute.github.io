@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>Cryptocurrency place template</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/logo.png" type="image/png">
+        <title>Ben Blute</title>
+
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="Solon place template">
+        <meta property="og:image" content="https://www.benblute.com/logo.png">
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@benblute" />
+        <meta name="twitter:title" content="Solon place template" />
+        <meta name="twitter:image" content="https://www.benblute.com/logo.png" />
     </head>
+
     <style>
         .container {
             position: relative;
@@ -14,20 +26,8 @@
             top: 0;
             left: 0;
         }
-
-        .overlay {
-            position: absolute;
-            right: 0;
-            top: 0;
-            background-color: white;
-            padding: 1rem;
-        }
-
-        .overlay.hide {
-            display: none;
-        }
-        
     </style>
+
     <body>
         <div id = "container" class = "container">
             <canvas id = "canvas_background" width = "800" height = "500"></canvas>
@@ -40,8 +40,8 @@
             const X_OFFSET=400
             const Y_OFFSET=100
 
-            const X_IN_PLACE=967
-            const Y_IN_PLACE=459
+            const X_IN_PLACE=0
+            const Y_IN_PLACE=0
 
             function getMousePos(canvas, evt) {
                 const rect = canvas.getBoundingClientRect();
