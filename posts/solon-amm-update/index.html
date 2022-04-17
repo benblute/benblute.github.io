@@ -45,11 +45,11 @@
                 <h1>Solon AMM update</h1>
                 <br />
 
-                <p>It’s been over 6 months since we started developing the Solon protocol. After continual research into DeFi technology, we have decided to make some fundamental changes to our AMM. What follows is an in depth explanation of our reasoning for these changes.</p>
+                <p>It’s been over 6 months since we started developing the Solon protocol. After continual research into DeFi technology, we have decided to make some fundamental changes to our AMM. The following is an in-depth explanation of our reasoning behind these changes.</p>
                 <br />
 
                 <h2>Some background on AMMs</h2>
-                <p>An AMM can serve two very different purposes: exchanging assets and managing investments. It’s impossible to make a single AMM that can do both of these things efficiently, so many of the tradeoffs in the design of an AMM come down to prioritizing one of these purposes over the other. Here are some examples of existing AMMs.</p>
+                <p>An AMM can serve two very different purposes: exchanging assets and managing investments. It’s impossible to make a single AMM that can do both of these things efficiently, so many of the tradeoffs in the design of an AMM come down to prioritizing one of these purposes over the other. Here are some examples of existing AMMs:</p>
                 <br />
 
                 <h4>Uniswap</h4>
@@ -61,11 +61,11 @@
                 <br />
 
                 <h4>Balancer</h4>
-                <p>Balancer uses a different value function to allow for more than two assets per pool and unique weights for each asset. This makes it possible for investors to manage their portfolio using Balancer. However, there are still a lot of restrictions on pool managers which make it difficult to use Balancer pools like hedge funds. Balancer also has numerous features to improve capital efficiency and gas efficiency, despite the inherent drawbacks of its value function. All in all, Balancer finds its niche somewhere between being a portfolio manager and an exchange. It’s not the worst of both worlds, but it's not the best of both worlds either.</p>
+                <p>Balancer uses a different value function to allow for more than two assets per pool and unique weights for each asset. This makes it possible for investors to manage their portfolio using Balancer. However, there are still a lot of restrictions on pool managers which make it difficult to use Balancer pools like hedge funds. Balancer also has numerous features to improve capital efficiency and gas efficiency, despite the inherent drawbacks of its value function. All in all, Balancer finds its niche somewhere between being a portfolio manager and an exchange. It’s not the worst of both worlds, but it's not the best either.</p>
                 <br />
 
                 <h2>Where does Solon fit in?</h2>
-                <p>Our original plan for Solon was to create an AMM that combines the best features of Uniswap, Bancor, and Balancer. It would have concentrated liquidity and impermanent loss protection with an n-dimensional value function and additional features to help pool managers run their pools like hedge funds. However, just like Balancer, this approach fails to achieve the best of both worlds. Concentrated liquidity improves exchange rates for traders, but it also allows the ratio of assets in a pool to change independently of the weights chosen by the pool manager. Similarly, impermanently loss protection can be helpful for liquidity providers, but it also has numerous downsides (the exact downsides depend on the implementation, but some examples include higher gas fees, higher swap fees, and once again, the ability for the ratio of assets to change independently of the weights).</p>
+                <p>Our original plan for Solon was to create an AMM that combines the best features of Uniswap, Bancor, and Balancer. It would have concentrated liquidity and impermanent loss protection with an n-dimensional value function and additional features to help pool managers run their pools like hedge funds. However, just like Balancer, this approach fails to achieve the best of both worlds. Concentrated liquidity improves exchange rates for traders, but it also allows the ratio of assets in a pool to change independently of the weights chosen by the pool manager. Similarly, impermanent loss protection can be helpful for liquidity providers, but it also has numerous downsides (the exact downsides depend on the implementation, but some examples include higher gas fees, higher swap fees, and once again, the ability for the ratio of assets to change independently of the weights).</p>
                 <br />
 
                 <h2>The solution</h2>
@@ -73,7 +73,7 @@
                 <br />
 
                 <h2>Conclusion</h2>
-                <p>Concentrated liquidity and impermanent loss protection have been a major selling point of Solon from the beginning, but we now believe that there are better ways to solve the same problems. By focussing each part of the Solon protocol on a single use case, we can better meet the needs of traders, investors, arbitrageurs, and hedge fund managers alike.</p>
+                <p>Concentrated liquidity and impermanent loss protection have been major selling points of Solon from the beginning, but we now believe that there are better ways to solve the same problems. By focussing each part of the Solon protocol on a single use case, we can better meet the needs of traders, investors, arbitrageurs, and hedge fund managers alike.</p>
                 <br />
                 <br />
                 <a href="/">See all posts</a>
