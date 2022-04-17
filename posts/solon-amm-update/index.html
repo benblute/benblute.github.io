@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/logo.png" type="image/png">
+        <title>Ben Blute</title>
+
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="Solon AMM update">
+        <meta property="og:image" content="https://www.benblute.com/logo.png">
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@benblute" />
+        <meta name="twitter:title" content="Solon AMM update" />
+        <meta name="twitter:image" content="https://www.benblute.com/logo.png" />
+    </head>
+
+    <style>
+        * {
+            font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+        }
+
+        h2, h4, p, li {
+            text-align: left;
+            overflow-wrap: break-word;
+        }
+
+        a {
+            text-decoration: none;
+            color: steelblue;
+        }
+    </style>
+
+    <body>
+        <center>
+            <div class="container">
+                <br />
+                <br />
+                <h1>Solon AMM update</h1>
+                <br />
+
+                <p>It’s been over 6 months since we started developing the Solon protocol. After continual research into DeFi technology, we have decided to make some fundamental changes to our AMM. What follows is an in depth explanation of our reasoning for these changes.</p>
+                <br />
+
+                <h2>Some background on AMMs</h2>
+                <p>An AMM can serve two very different purposes: exchanging assets and managing investments. It’s impossible to make a single AMM that can do both of these things efficiently, so many of the tradeoffs in the design of an AMM come down to prioritizing one of these purposes over the other. Here are some examples of existing AMMs.</p>
+                <br />
+
+                <h4>Uniswap</h4>
+                <p>Every Uniswap pool must have exactly two assets with equal weights. This might seem like a huge limitation, but it actually helps Uniswap serve its primary purpose of exchanging assets. By limiting the number of pools, Uniswap avoids the problem of liquidity fragmentation, thereby improving gas efficiency and allowing for significantly better exchange rates. Uniswap also has a feature called concentrated liquidity, which increases capital efficiency and further improves exchange rates for traders. The downside of these tradeoffs is that Uniswap is very bad at managing investments.</p>
+                <br />
+
+                <h4>Bancor</h4>
+                <p>Bancor is even more restrictive than Uniswap. Not only does it limit pools to two assets, but one of those assets must be BNT. Requiring every pool to have the same asset allows for features like impermanent loss protection and single sided liquidity provision. Once again, this tradeoff improves the experience of market makers and traders at the expense of making Bancor essentially useless for managing investments.</p>
+                <br />
+
+                <h4>Balancer</h4>
+                <p>Balancer uses a different value function to allow for more than two assets per pool and unique weights for each asset. This makes it possible for investors to manage their portfolio using Balancer. However, there are still a lot of restrictions on pool managers which make it difficult to use Balancer pools like hedge funds. Balancer also has numerous features to improve capital efficiency and gas efficiency, despite the inherent drawbacks of its value function. All in all, Balancer finds its niche somewhere between being a portfolio manager and an exchange. It’s not the worst of both worlds, but it's not the best of both worlds either.</p>
+                <br />
+
+                <h2>Where does Solon fit in?</h2>
+                <p>Our original plan for Solon was to create an AMM that combines the best features of Uniswap, Bancor, and Balancer. It would have concentrated liquidity and impermanent loss protection with an n-dimensional value function and additional features to help pool managers run their pools like hedge funds. However, just like Balancer, this approach fails to achieve the best of both worlds. Concentrated liquidity improves exchange rates for traders, but it also allows the ratio of assets in a pool to change independently of the weights chosen by the pool manager. Similarly, impermanently loss protection can be helpful for liquidity providers, but it also has numerous downsides (the exact downsides depend on the implementation, but some examples include higher gas fees, higher swap fees, and once again, the ability for the ratio of assets to change independently of the weights).</p>
+                <br />
+
+                <h2>The solution</h2>
+                <p>Fortunately, there’s a simple solution to these problems. Rather than trying to combine both use cases into one AMM, we can instead use two sets of smart contracts. The first is the Solon AMM, which will be laser focussed on what it does best: hedge funds. Instead of concentrated liquidity or impermanent loss protection, this AMM would prioritize features that help investors, arbitrageurs, and pool managers. That means extremely low gas fees, zero protocol fees, and the ability for pool managers to have complete control over the assets in their pool. The other set of smart contracts isn’t an AMM at all; it’s the Solon aggregator. The aggregator provides the best exchange rates to traders by aggregating liquidity sources across all of DeFi, including Uniswap, Bancor, the Solon AMM, order book based DEXs, and even coincidence of wants on the Solon marketplace. It’s also extremely gas efficient and it allows traders to pay gas fees using ERC20 tokens instead of ETH.</p>
+                <br />
+
+                <h2>Conclusion</h2>
+                <p>Concentrated liquidity and impermanent loss protection have been a major selling point of Solon from the beginning, but we now believe that there are better ways to solve the same problems. By focussing each part of the Solon protocol on a single use case, we can better meet the needs of traders, investors, arbitrageurs, and hedge fund managers alike.</p>
+                <br />
+                <br />
+                <a href="/">See all posts</a>
+                <br />
+                <br />
+            </div>
+        </center>
+    </body>
+</html>
