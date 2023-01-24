@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="160" height="160" version="1.1" viewBox="0 0 42.333 42.333" xmlns="http://www.w3.org/2000/svg">
   <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6458">
-    <path d="m1.3229 41.01v-26.458l13.229-13.229h26.458v26.458l-13.229 13.229z"/>
-    <path d="m14.552 1.3229v26.458h26.458"/>
-    <path d="m1.3229 14.552h26.458v26.458"/>
-    <path d="m1.3229 41.01 13.229-13.229"/>
-    <path d="m27.781 14.552 13.229-13.229"/>
+    <path d="m3.9688 38.365v-23.812l10.583-10.583h23.812v23.812l-10.583 10.583z"/>
+    <path d="m14.552 3.9688v23.812h23.812"/>
+    <path d="m3.9688 14.552h23.812v23.812"/>
+    <path d="m3.9688 38.365 10.583-10.583"/>
+    <path d="m27.781 14.552 10.583-10.583"/>
   </g>
 </svg>
